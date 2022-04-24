@@ -1,3 +1,3 @@
 ## Caesar Cipher
 
-Python implementaion of The Caesar Cipher technique
+Python implementation of The Caesar Cipher technique
