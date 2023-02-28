@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateUserActivity"
+    tools:ignore="Autofill,RtlSymmetry">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewLogoC"
+        android:layout_width="164dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/phantom_logo"
+        />
+
+
+
+    <EditText
+        android:id="@+id/editTextEmail_CreateUser"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/imageViewLogoC"
+        android:background="@drawable/custom_textbox_login"
+        android:drawableStart="@drawable/vector_email"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/field_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_hint"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/togglePasswordLayout"
+        android:layout_width="342dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextEmail_CreateUser"
+        app:passwordToggleEnabled="true"
+        >
+
+
+        <EditText
+            android:id="@+id/editTextFirstPassword_CreateUser"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/custom_textbox_login"
+            android:drawableStart="@drawable/vector_key"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_hint"
+            tools:ignore="Autofill" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TogglePasswordLayout2"
+        android:layout_width="342dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/togglePasswordLayout"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editTextSecondPassword_CreateUser"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/custom_textbox_login"
+            android:drawableStart="@drawable/vector_key"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonCreateUser"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/TogglePasswordLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/custom_button_login"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/textViewDoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_login"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonCreateUser"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+
+</RelativeLayout>

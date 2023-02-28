@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/home_description"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:id="@+id/backgroundFirstImage"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_background_image"
+                />
+
+                <ImageView
+                    android:id="@+id/firstImage"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_alignTop="@+id/backgroundFirstImage"
+                    android:layout_alignStart="@+id/backgroundFirstImage"
+                    android:layout_alignEnd="@+id/backgroundFirstImage"
+                    android:layout_marginTop="30dp"
+
+                    android:src="@drawable/galaxy_zflip3" />
+
+                <TextView
+                    android:id="@+id/priceFirstImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/price1"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RatingBar
+                    android:id="@+id/ratingFirstImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstImage"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="8"
+                    android:numStars="4"
+                    android:progress="5"
+                    android:stepSize=".5"
+                    android:progressTint="#005780" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceFirstImage"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Durabilidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceFirstImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="177dp"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Câmera"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceFirstImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Design"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+
+
+            <TextView
+                android:id="@+id/backgroundSecondImage"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/backgroundFirstImage"
+                android:background="@drawable/custom_background_image"
+                />
+
+                <ImageView
+                    android:id="@+id/SecondImage"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_alignTop="@+id/backgroundSecondImage"
+                    android:layout_alignStart="@+id/backgroundSecondImage"
+                    android:layout_alignEnd="@+id/backgroundSecondImage"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/echo_buds_alexa" />
+
+                <TextView
+                    android:id="@+id/priceSecondImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SecondImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/price2"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RatingBar
+                    android:id="@+id/ratingSecondImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SecondImage"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="7dp"
+                    android:max="8"
+                    android:numStars="4"
+                    android:progress="5"
+                    android:stepSize=".5"
+                    android:progressTint="#005780" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceSecondImage"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Durabilidade"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceSecondImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="177dp"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Câmera"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/priceSecondImage"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/custom_button_login"
+                    android:text="Design"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:elegantTextHeight="true"
+                    android:textSize="18sp"
+
+                    />
+
+
+            <TextView
+                android:id="@+id/backgroundThirdImage"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/backgroundSecondImage"
+                android:background="@drawable/custom_background_image"
+                />
+
+            <ImageView
+                android:id="@+id/ThirdImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignTop="@+id/backgroundThirdImage"
+                android:layout_alignStart="@+id/backgroundThirdImage"
+                android:layout_alignEnd="@+id/backgroundThirdImage"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/note_samsung" />
+
+            <TextView
+                android:id="@+id/priceThirdImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ThirdImage"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/price3"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+
+                />
+
+            <RatingBar
+                android:id="@+id/ratingThirdImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ThirdImage"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:max="8"
+                android:numStars="4"
+                android:progress="5"
+                android:stepSize=".5"
+                android:progressTint="#005780" />
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/priceThirdImage"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/custom_button_login"
+                android:text="Durabilidade"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:elegantTextHeight="true"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/priceThirdImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="177dp"
+                android:background="@drawable/custom_button_login"
+                android:text="Câmera"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:elegantTextHeight="true"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/priceThirdImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/custom_button_login"
+                android:text="Design"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:elegantTextHeight="true"
+                android:textSize="18sp"
+
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
